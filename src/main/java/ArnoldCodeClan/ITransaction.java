@@ -9,6 +9,6 @@ public interface ITransaction {
     void buyCar(Car car);
     void sellCar(Car car);
     void increaseValue(double amount);
-    void reduceValue(double amount);
+    void decreaseValue(double amount);
 
 }

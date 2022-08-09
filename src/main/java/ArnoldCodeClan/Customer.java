@@ -4,7 +4,7 @@ import ArnoldCodeClan.cars.Car;
 
 import java.util.ArrayList;
 
-public class Customer implements ITransaction{
+public class Customer implements ITransaction {
 
     private double money;
     private ArrayList<Car> ownedCars;
@@ -34,13 +34,13 @@ public class Customer implements ITransaction{
         this.money += amount;
     }
 
-    public void reduceValue(double amount) {
+    public void decreaseValue(double amount) {
         this.money -= amount;
     }
 
     public void buyCar(Car car) {
         addCar(car);
-        reduceValue(car.getPrice());
+        decreaseValue(car.getPrice());
     }
 
     public void sellCar(Car car) {
